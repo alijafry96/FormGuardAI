@@ -1,1 +1,12 @@
 
+FirstName,LastName,Relationship,DOB,Gender,CoverageType,StartDate,EndDate,Address,City,State,Zip
+  John,Smith,Subscriber,1985-03-12,M,EE,2024-11-01,2024-11-30,123 Lakeview Rd,Grand Rapids,MI,49501
+     Sarah,Smith,Spouse,1987-07-22,F,ES,2024-11-01,2024-11-30,123 Lakeview Rd,Grand Rapids,MI,49501
+       Noah,Smith,Child,2014-05-03,M,EC,2024-11-01,2024-11-30,123 Lakeview Rd,Grand Rapids,MI,49501
+           Ella,Turner,Spouse,1984-11-11,F,ES,2024-12-01,2024-12-31,21 Meadow Ln,Ann Arbor,MI,48103
+        Mason,Turner,Child,2012-02-02,M,EC,2024-12-01,2024-12-31,21 Meadow Ln,Ann Arbor,MI,48103   
+Harper,White,Subscriber,1995-04-28,F,EE,2024-11-05,2024-11-30,10 Willow Rd,Traverse City,MI,49684  
+     Benjamin,White,Child,2020-01-01,M,EC,2024-11-05,2024-12-05,10 Willow Rd,Traverse City,MI,49684
+            Liam,Johnson,Subscriber,,M,EE,2024-10-01,2024-10-31,400 Pine St,Lansing,MI,48906       
+           Emma,Johnson,Spouse,1990-06-10,F,ES,2024-10-01,2024-10-31,400 Pine St,Lansing,MI,48906  
+           Oliver,Johnson,Child,2016-09-22,M,EC,2024-10-01,2024-10-31,400 Pine St,Lansing,MI,48906
