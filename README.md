@@ -42,31 +42,6 @@ The solution uses a **single-agent LLM pipeline** (OpenAI GPT model) deployed in
 
 ---
 
-## 📂 Repository Structure  
-
-FormGuardAI/
-│
-├── README.md
-│
-├── frontend/
-│ └── FormGuardAI.html # Simulated Web UI (demo-ready)
-│
-├── backend/
-│ └── FormGuardAI_MVP.ipynb # Colab notebook with full LLM pipeline
-│
-├── data/
-│ ├── census_with_errors.csv # Sample test file with intentional errors
-│ └── corrected_example_output.txt # Example output from MVP
-│
-└── assets/
-├── system_design_diagram.png # High-level architecture diagram
-└── demo_screenshots/ # UI screenshots for SDR & pitch
-
-yaml
-Copy code
-
----
-
 ## 🧠 System Architecture  
 FormGuard AI follows a **simple three-layer architecture**:
 
@@ -100,15 +75,6 @@ Key metrics:
 - **High precision**—very few false positives  
 
 Evaluation included both automated checks and manual review.
-
----
-
-## 🎨 Demo Assets  
-You can explore the system visually:
-
-- **Simulated Web UI:** `/frontend/FormGuardAI.html`  
-- **Architecture Diagram:** `/assets/system_design_diagram.png`  
-- **Screenshots:** `/assets/demo_screenshots/`
 
 ---
 
