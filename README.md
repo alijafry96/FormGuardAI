@@ -44,3 +44,111 @@ The solution uses a **single-agent LLM pipeline** (OpenAI GPT model) deployed in
 
 ## 📂 Repository Structure  
 
+FormGuardAI/
+│
+├── README.md
+│
+├── frontend/
+│ └── FormGuardAI.html # Simulated Web UI (demo-ready)
+│
+├── backend/
+│ └── FormGuardAI_MVP.ipynb # Colab notebook with full LLM pipeline
+│
+├── data/
+│ ├── census_with_errors.csv # Sample test file with intentional errors
+│ └── corrected_example_output.txt # Example output from MVP
+│
+└── assets/
+├── system_design_diagram.png # High-level architecture diagram
+└── demo_screenshots/ # UI screenshots for SDR & pitch
+
+yaml
+Copy code
+
+---
+
+## 🧠 System Architecture  
+FormGuard AI follows a **simple three-layer architecture**:
+
+1. **User Interaction Layer** (HTML prototype)  
+   – Allows users to paste/upload census data  
+   – Displays issues and corrected form  
+   – Supports file downloads  
+
+2. **Generative AI Processing Layer** (Colab notebook)  
+   – Pre-processing  
+   – LLM validation  
+   – Error extraction  
+   – Correction generation  
+
+3. **Storage Layer** (local for demo)  
+   – Synthetic census files  
+   – Corrected outputs  
+
+This design aligns with the course requirements of clarity, traceability, and human oversight.
+
+---
+
+## 🧪 Testing  
+A set of synthetic census files were created to stress-test the system.  
+Key metrics:
+
+- **~90%** missing-field detection rate  
+- **~85%** invalid-format detection  
+- **0 hallucinated fields** after final prompt refinement  
+- **4–6 seconds** per validation request  
+- **High precision**—very few false positives  
+
+Evaluation included both automated checks and manual review.
+
+---
+
+## 🎨 Demo Assets  
+You can explore the system visually:
+
+- **Simulated Web UI:** `/frontend/FormGuardAI.html`  
+- **Architecture Diagram:** `/assets/system_design_diagram.png`  
+- **Screenshots:** `/assets/demo_screenshots/`
+
+---
+
+## ▶ How to Run the MVP Backend  
+1. Open the Colab notebook inside: `backend/FormGuardAI_MVP.ipynb`  
+2. Upload any `.csv` or `.txt` file to the notebook  
+3. Run the validation cell  
+4. View generated:
+   - Summary  
+   - Issues  
+   - Corrected Form  
+5. Download corrected output
+
+No deployment required — runs entirely in Colab.
+
+---
+
+## ▶ How to Open the Frontend Simulation  
+1. Navigate to: `frontend/FormGuardAI.html`  
+2. Click **Raw** → **Save As…** to download  
+3. Open the file in your browser  
+4. Paste census data or upload  
+5. Click **Run Validation** to trigger the simulated output  
+6. Download corrected form (simulated)
+
+---
+
+## 🎯 Purpose & Vision  
+FormGuard AI demonstrates how **Generative Intelligence** can remove repetitive overhead from healthcare operations by:
+
+- Reducing manual form review  
+- Catching errors earlier  
+- Improving efficiency  
+- Supporting a scalable workflow for payers and vendors  
+
+This project aligns with real-world processes in enrollment ops and showcases an SDLC-driven GenAI design.
+
+---
+
+## 📩 Contact  
+**Ali Arslan**  
+Florida Atlantic University   
+
